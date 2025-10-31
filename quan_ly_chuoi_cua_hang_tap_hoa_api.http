@@ -1,0 +1,6 @@
+@quan_ly_chuoi_cua_hang_tap_hoa_api_HostAddress = http://localhost:5134
+
+GET {{quan_ly_chuoi_cua_hang_tap_hoa_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

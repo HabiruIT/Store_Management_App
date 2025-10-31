@@ -1,0 +1,100 @@
+# ==============================
+# .NET 9 / ASP.NET Core .gitignore
+# Clean & production-ready
+# ==============================
+
+## BUILD RESULTS ##
+bin/
+obj/
+out/
+Debug/
+Release/
+[Bb]uild/
+publish/
+artifacts/
+
+## USER-SPECIFIC FILES ##
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vscode/
+.vs/
+
+## OS FILES ##
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+## LOGS ##
+*.log
+logs/
+LogFiles/
+
+## ENVIRONMENT & CONFIG ##
+.env
+*.local.json
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json.user
+
+## TEST FILES ##
+TestResults/
+*.TestResults.xml
+coverage/
+*.coverage
+*.coveragexml
+
+## PACKAGE MANAGEMENT ##
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+.nuget/
+project.lock.json
+
+## CACHE ##
+*.pidb
+*.svclog
+*.userprefs
+.idea/
+ReSharper/
+JetBrains.ReSharper.*
+_ReSharper.Caches/
+*.DotSettings.user
+*.vspscc
+
+## TOOLS ##
+tools/
+node_modules/
+wwwroot/lib/
+wwwroot/dist/
+npm-debug.log
+yarn-error.log
+
+## DEPLOYMENT ##
+/wwwroot/
+!wwwroot/uploads/        # giữ thư mục upload nếu có
+docker-compose.override.yml
+*.publishsettings
+
+## BACKUP & TEMP ##
+*.bak
+*.tmp
+*.temp
+*.old
+
+## GIT ##
+*.orig
+*.rej
+
+## OPTIONAL: include only necessary assets ##
+!appsettings.json
+!Program.cs
+!Startup.cs
+!Properties/
+!Controllers/
+!Models/
+!Services/
+!wwwroot/uploads/.gitkeep
