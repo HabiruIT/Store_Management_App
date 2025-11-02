@@ -25,6 +25,7 @@ namespace quan_ly_chuoi_cua_hang_tap_hoa_api.Repositories
                     Unit = p.Unit,
                     Price = p.Price,
                     CostPrice = p.CostPrice,
+                    Barcode = p.Barcode,
                     Status = p.Status,
                     ImageUrl = p.ImageUrl // ✅ thêm ánh xạ ảnh
                 }).ToListAsync();
@@ -43,6 +44,7 @@ namespace quan_ly_chuoi_cua_hang_tap_hoa_api.Repositories
                     Unit = p.Unit,
                     Price = p.Price,
                     CostPrice = p.CostPrice,
+                    Barcode = p.Barcode,
                     Status = p.Status,
                     ImageUrl = p.ImageUrl // ✅ thêm
                 }).FirstOrDefaultAsync();
@@ -61,6 +63,7 @@ namespace quan_ly_chuoi_cua_hang_tap_hoa_api.Repositories
                     Unit = p.Unit,
                     Price = p.Price,
                     CostPrice = p.CostPrice,
+                    Barcode = p.Barcode,
                     Status = p.Status,
                     ImageUrl = p.ImageUrl // ✅ thêm
                 }).ToListAsync();
@@ -93,6 +96,7 @@ namespace quan_ly_chuoi_cua_hang_tap_hoa_api.Repositories
                 Unit = product.Unit,
                 Price = product.Price,
                 CostPrice = product.CostPrice,
+                Barcode = product.Barcode,
                 Status = product.Status,
                 ImageUrl = product.ImageUrl // ✅ thêm
             };

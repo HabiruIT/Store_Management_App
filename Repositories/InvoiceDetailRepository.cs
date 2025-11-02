@@ -43,7 +43,7 @@ namespace quan_ly_chuoi_cua_hang_tap_hoa_api.Repositories
                 throw new Exception("Không tìm thấy sản phẩm hoặc hóa đơn.");
 
             // ✅ trừ tồn kho (1 sản phẩm chỉ nằm ở kho mặc định id=1, có thể mở rộng sau)
-            await _inventoryRepo.UpdateQuantityAsync(1, dto.ProductId, -dto.Quantity);
+            await _inventoryRepo.UpdateQuantityAsync(3, dto.ProductId, -dto.Quantity);
 
             // ✅ thêm chi tiết
             var detail = new InvoiceDetail

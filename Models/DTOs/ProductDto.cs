@@ -8,6 +8,7 @@
         public string Unit { get; set; }
         public decimal Price { get; set; }
         public decimal CostPrice { get; set; }
+        public string Barcode { get; set; }
         public bool Status { get; set; }
         public string? ImageUrl { get; set; }
     }

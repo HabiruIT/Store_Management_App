@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using quan_ly_chuoi_cua_hang_tap_hoa_api.Models.DTOs;
 using quan_ly_chuoi_cua_hang_tap_hoa_api.Services;
 
@@ -6,6 +7,7 @@ namespace quan_ly_chuoi_cua_hang_tap_hoa_api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class PaymentsController : ControllerBase
     {
         private readonly PaymentService _service;
